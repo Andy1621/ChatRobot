@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>聊天界面</title>
+    <link href="{{ url_for('static',filename='css/global.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body class="chat-bg">
+<header class="header-title">小A</header>
+<section class="chat-box">
+    <span class="chat-trip">此刻对方忙碌，请留言</span>
+    <div class="bubbleDiv"></div>
+</section>
+<footer class="chat-edit clearfix">
+    <p class="chat-info" contenteditable="true">你好</p>
+    <button class="send-btn fr">发送</button>
+</footer>
+
+<script src="{{ url_for('static',filename='js/jquery-2.1.1.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/chat.js') }}"></script>
+<script>
+
+</script>
+</body>
+</html>
